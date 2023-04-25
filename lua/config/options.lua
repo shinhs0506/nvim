@@ -11,6 +11,8 @@ local options = {
 	splitbelow = true,
 	splitright = true,
 
+  laststatus = 3,
+
 	expandtab = true,
 	shiftwidth = 2,
 	tabstop = 2,
