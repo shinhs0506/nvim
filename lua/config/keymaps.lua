@@ -37,7 +37,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     buf_map('<leader>lr', '<cmd>Telescope lsp_references<cr>', '[r]eferences')
     buf_map('<leader>li', '<cmd>Telescope lsp_implementations<cr>', '[i]mplementation')
     buf_map('<leader>lw', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', '[w]orkspace symbol')
-    buf_map('<leader>lb', '<cmd>Telescope lsp_document_symbols()<cr>', '[b]uffer symbol')
+    buf_map('<leader>lb', '<cmd>Telescope lsp_document_symbols<cr>', '[b]uffer symbol')
     buf_map('<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<cr>', 'Signature Help')
   end,
 })
@@ -77,7 +77,7 @@ wk.register({
     o = { '<cmd>NvimTreeOpen<cr>', '[o]pen Explorer' },
     c = { '<cmd>NvimTreeClose<cr>', '[c]lose Explorer' },
     t = { '<cmd>NvimTreeToggle<cr>', '[t]oggle Explorer' },
-    f = { '<cmd>NvimTreeFind<cr>', '[F]ind file'}
+    f = { '<cmd>NvimTreeFindFile<cr>', '[F]ind file'}
   }
 }, { prefix = '<leader>' })
 
