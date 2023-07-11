@@ -47,7 +47,7 @@ wk.register({
   d = {
     name = '[d]ap',
     c = { '<cmd>lua require(\'dap\').continue()<cr>', '[c]ontinue' },
-    b = { '<cmd>lua require(\'dap\').toggle_breakpoint()<cr>', '[t]oggle breakpoint' },
+    b = { '<cmd>lua require(\'dap\').toggle_breakpoint()<cr>', 'toggle [b]reakpoint' },
     s = { '<cmd>lua require(\'dap\').step_into()<cr>', '[s]tep' },
     n = { '<cmd>lua require(\'dap\').step_over()<cr>', '[n]ext' },
     u = { '<cmd>lua require(\'dap\').up()<cr>', '[u]p call stack' },
@@ -65,7 +65,8 @@ wk.register({
     g = { '<cmd>Telescope git_files<cr>', 'Find [g]it File' },
     l = { '<cmd>Telescope live_grep<cr>', '[l]ive grep' },
     h = { '<cmd>Telescope help_tags<cr>', '[h]elp tags' },
-    k = { '<cmd>Telescope key_maps<cr>', '[k]ey maps' },
+    k = { '<cmd>Telescope keymaps<cr>', '[k]ey maps' },
+    c = { '<cmd>Telescope commands<cr>', '[k]ey maps' },
     ['/'] = { '<cmd>Telescope resume<cr>', 'Resume' },
   }
 }, { prefix = '<leader>' })
